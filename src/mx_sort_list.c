@@ -8,7 +8,6 @@ static void mx_swap_list(t_list *head, t_list *node) {
     node->data = temp;
 }
 
-
 t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *)) {
     for(t_list *head = lst; head != NULL; head = head->next) {
         for(t_list *node = head->next;  node != NULL; node = node->data) {

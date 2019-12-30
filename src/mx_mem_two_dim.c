@@ -12,5 +12,5 @@ char **mx_mem_two_dim(const char *s, char c) {
             }
         }
     }
-    return arr;
+    return arr ? arr : NULL;
 }

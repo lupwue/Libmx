@@ -10,8 +10,8 @@ char *mx_strndup(const char *s1, size_t n) {
     if (!s1 || !newstr)
         return NULL;
     if (newstr) {
-            mx_memcpy (newstr, s1, len);
-            newstr[len] = '\0';
+        mx_memcpy (newstr, s1, len);
+        newstr[len] = '\0';
     }
     return (char *) newstr;
 }
